@@ -1,9 +1,19 @@
 <html>
 <head>
     <title>FabricJS Square Brush Demo</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <canvas id="demo" width="600px" height="600px" style="border:1px solid #aaa"></canvas>
+    <div id="demo-container">
+        <div class="control">
+            <label for="brushSize">Brush Size</label>
+            <input id="brushSize" type="range" value="10">
+            <label for="brushColor">Brush Color</label>
+            <input id="brushColor" type="color" value="#9B59B6"></input>
+        </div>
+        <canvas id="demo" width="500px" height="500px" style="border:1px solid #aaa"></canvas>
+    </div>
+
     <script src="lib/fabric.min.js"></script>
     <script src="./../fabricSquareBrush.js"></script>
     <script src="demo.js"></script>
