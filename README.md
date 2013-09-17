@@ -20,4 +20,5 @@ But basic usage is as follow:
 ## TODO
 
 + Exposing the module using CommonJS, AMD.
++ Publish to bower, npm
 + Rotate the square while drawing
