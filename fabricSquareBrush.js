@@ -72,13 +72,11 @@
     },
 
     addPoint: function(pointer) {
-      var pointerPoint = new fabric.Point(pointer.x, pointer.y);
-
-      var width = getRandomInt(0, this.width);
-
-      var color = new fabric.Color(this.color)
-                          .setAlpha(fabric.util.getRandomInt(0, 100) / 100)
-                          .toRgba();
+      var pointerPoint = new fabric.Point(pointer.x, pointer.y),
+          width = getRandomInt(0, this.width),
+          color = new fabric.Color(this.color)
+                    .setAlpha(fabric.util.getRandomInt(0, 100) / 100)
+                    .toRgba();
 
       pointerPoint.width = pointerPoint.height = width;
       pointerPoint.fill = color;
