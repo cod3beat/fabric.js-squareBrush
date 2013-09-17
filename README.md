@@ -1,5 +1,7 @@
 # Fabric Square Brush
 
+![](pics/squareBrush.jpeg)
+
 This is a square brush for [fabric.js](https://github.com/kangax/fabric.js/raw/master/LICENSE).
 
 ## HOW TO
