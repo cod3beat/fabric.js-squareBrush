@@ -16,3 +16,8 @@ But basic usage is as follow:
 
     canvas.isDrawingMode = true;
     canvas.freeDrawingBrush = new fabric.SquareBrush(canvas);
+
+## TODO
+
++ Exposing the module using CommonJS, AMD.
++ Rotate the square while drawing
