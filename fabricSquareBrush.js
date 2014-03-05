@@ -53,11 +53,13 @@
      */
     onMouseUp: function(){
       var originalRenderOnAddition = this.canvas.renderOnAddition;
+          group = new fabric.Group();
       this.canvas.renderOnAddition = false;
 
       for (var i = 0, len = this.points.length; i < len; i++) {
         var point = this.points[i];
-        this.canvas.add(new fabric.Rect({
+
+        group.add(new fabric.Rect({
           width: point.width,
           height: point.height,
           top: point.y,
@@ -65,6 +67,8 @@
           fill: point.fill
         }));
       }
+
+      this.canvas.add(group);
 
       this.canvas.clearContext(this.canvas.contextTop);
       this.canvas.renderOnAddition = originalRenderOnAddition;
@@ -85,5 +89,5 @@
       return pointerPoint;
     }
   });
-    
+
 })(this);
